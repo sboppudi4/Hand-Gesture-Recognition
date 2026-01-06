@@ -1,0 +1,13 @@
+﻿venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.vscode/
+.idea/
+env/
+dist/
+build/
+*.egg-info/
+.DS_Store
+models/*.hdf5
+models/*.tflite

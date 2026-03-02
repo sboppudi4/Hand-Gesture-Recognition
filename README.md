@@ -1,35 +1,58 @@
 # Hand Gesture Recognition
 
-Real-time hand gesture recognition using MediaPipe and pre-trained keypoint/point-history classifiers.
+Real-time hand gesture recognition built with MediaPipe and machine learning classifiers for keypoint and point-history based inference.
 
-## Project Structure
+## Overview
 
-- `hand-gesture-recognition-mediapipe-main/app.py`: main application entry point.
-- `hand-gesture-recognition-mediapipe-main/model/`: model code, labels, and trained artifacts (`.tflite`, `.hdf5`).
-- `hand-gesture-recognition-mediapipe-main/utils/`: utility modules.
-- `hand-gesture-recognition-mediapipe-main/*.ipynb`: training and experimentation notebooks.
+This repository contains an end-to-end implementation for hand gesture recognition using webcam input. It includes:
 
-## Requirements
+- real-time inference pipeline (`app.py`)
+- trained classifier artifacts (`.tflite`, `.hdf5`)
+- label and dataset files (`.csv`)
+- Jupyter notebooks for model development workflows
 
-- Python 3.10+ recommended
-- Webcam access
+## Repository Layout
 
-Install dependencies (if not already installed in your environment):
+```
+hand-gesture-recognition-mediapipe-main/
+├── app.py
+├── keypoint_classification.ipynb
+├── keypoint_classification_EN.ipynb
+├── point_history_classification.ipynb
+├── model/
+│   ├── keypoint_classifier/
+│   └── point_history_classifier/
+└── utils/
+```
+
+## Prerequisites
+
+- Python 3.10 or later
+- Webcam-enabled machine
+- `pip` package manager
+
+## Installation
+
+From the repository root:
 
 ```bash
+cd hand-gesture-recognition-mediapipe-main
 pip install opencv-python mediapipe numpy tensorflow
 ```
 
-## Run
-
-From the repository root:
+## Run the Application
 
 ```bash
 cd hand-gesture-recognition-mediapipe-main
 python app.py
 ```
 
-## Notes
+## Included Assets
 
-- The repository includes trained model files under `model/`.
-- Jupyter notebooks are provided for keypoint and point-history classifier workflows.
+- pre-trained model files for inference (`.tflite`, `.hdf5`)
+- label definitions for gesture classes
+- notebook-based workflows for keypoint and point-history classification
+
+## License
+
+This project is provided as-is for educational and development purposes. If you plan to redistribute or use it commercially, add an explicit license file in this repository.

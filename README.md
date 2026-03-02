@@ -53,6 +53,3 @@ python app.py
 - label definitions for gesture classes
 - notebook-based workflows for keypoint and point-history classification
 
-## License
-
-This project is provided as-is for educational and development purposes. If you plan to redistribute or use it commercially, add an explicit license file in this repository.
